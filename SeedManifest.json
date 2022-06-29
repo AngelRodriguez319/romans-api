@@ -1,0 +1,32 @@
+{
+  "models": [
+    {
+      "attrs": [],
+      "description": "Represents a registered user",
+      "name": "user"
+    },
+    {
+      "attrs": [
+        {
+          "name": "input",
+          "type": "int"
+        },
+        {
+          "length": "100",
+          "name": "result",
+          "type": "string"
+        },
+        {
+          "card": {
+            "has": "0..*",
+            "ref": "1"
+          },
+          "is_fk": true,
+          "name": "user",
+          "type": "user"
+        }
+      ],
+      "name": "process"
+    }
+  ]
+}
